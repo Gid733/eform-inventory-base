@@ -14,8 +14,8 @@ namespace Microting.eFormInventoryBase.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.8")
-                .HasAnnotation("Relational:MaxIdentifierLength", 64);
+                .HasAnnotation("Relational:MaxIdentifierLength", 64)
+                .HasAnnotation("ProductVersion", "5.0.5");
 
             modelBuilder.Entity("Microting.eFormApi.BasePn.Infrastructure.Database.Entities.PluginConfigurationValue", b =>
                 {
@@ -30,7 +30,7 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime(6)");
@@ -39,14 +39,14 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Value")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<int>("Version")
                         .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
@@ -66,7 +66,7 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime(6)");
@@ -75,14 +75,14 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Value")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<int>("Version")
                         .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
@@ -120,8 +120,8 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
@@ -164,8 +164,8 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
@@ -179,7 +179,7 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("ClaimName")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
@@ -188,7 +188,7 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("PermissionName")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime(6)");
@@ -200,8 +200,8 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
@@ -233,8 +233,8 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
@@ -269,8 +269,8 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
@@ -290,7 +290,7 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime(6)");
@@ -302,8 +302,8 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
@@ -326,7 +326,7 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime(6)");
@@ -338,8 +338,8 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
@@ -371,10 +371,10 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Location")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("SN")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime(6)");
@@ -386,8 +386,8 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
@@ -403,7 +403,7 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Code")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
@@ -412,10 +412,10 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("Name")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<int?>("ParentId")
                         .HasColumnType("int");
@@ -430,8 +430,8 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
@@ -468,8 +468,8 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
@@ -511,8 +511,8 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
@@ -526,7 +526,7 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Code")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
@@ -535,13 +535,13 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<int>("ItemGroupId")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<int?>("ParentId")
                         .HasColumnType("int");
@@ -556,8 +556,8 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
@@ -571,10 +571,10 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("BaseUnitOfMeasure")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("Comment")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<int>("CostingMethod")
                         .HasColumnType("int");
@@ -582,11 +582,14 @@ namespace Microting.eFormInventoryBase.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<string>("CreatedByName")
+                        .HasColumnType("longtext");
+
                     b.Property<int>("CreatedByUserId")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<int>("EformId")
                         .HasColumnType("int");
@@ -595,7 +598,7 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("GtinEanUpc")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<int?>("ItemGroupId")
                         .HasColumnType("int");
@@ -604,13 +607,13 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<int>("NetWeight")
                         .HasColumnType("int");
 
                     b.Property<string>("No")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<int>("ProfitPercent")
                         .HasColumnType("int");
@@ -619,7 +622,7 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("RiskDescription")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<int>("SalesUnitOfMeasure")
                         .HasColumnType("int");
@@ -643,14 +646,14 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Usage")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<int>("Version")
                         .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
@@ -687,8 +690,8 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
@@ -730,8 +733,8 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
@@ -766,8 +769,8 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
@@ -809,8 +812,8 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
@@ -824,10 +827,10 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("BaseUnitOfMeasure")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("Comment")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<int>("CostingMethod")
                         .HasColumnType("int");
@@ -835,11 +838,14 @@ namespace Microting.eFormInventoryBase.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<string>("CreatedByName")
+                        .HasColumnType("longtext");
+
                     b.Property<int>("CreatedByUserId")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<int>("EformId")
                         .HasColumnType("int");
@@ -848,7 +854,7 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("GtinEanUpc")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<int?>("ItemGroupId")
                         .HasColumnType("int");
@@ -860,13 +866,13 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<int>("NetWeight")
                         .HasColumnType("int");
 
                     b.Property<string>("No")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<int>("ProfitPercent")
                         .HasColumnType("int");
@@ -875,7 +881,7 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("RiskDescription")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<int>("SalesUnitOfMeasure")
                         .HasColumnType("int");
@@ -899,14 +905,14 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Usage")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<int>("Version")
                         .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
@@ -941,10 +947,10 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Location")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("SN")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime(6)");
@@ -956,8 +962,8 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
@@ -977,7 +983,7 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("FileName")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<int>("ItemTypeId")
                         .HasColumnType("int");
@@ -995,8 +1001,8 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
@@ -1018,7 +1024,7 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("FileName")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .HasColumnType("longtext");
 
                     b.Property<int>("ItemTypeId")
                         .HasColumnType("int");
@@ -1039,8 +1045,8 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
-                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
-                        .HasMaxLength(255);
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("Id");
 
@@ -1054,6 +1060,8 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasForeignKey("PermissionId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Permission");
                 });
 
             modelBuilder.Entity("Microting.eFormInventoryBase.Infrastructure.Data.Entities.Item", b =>
@@ -1061,6 +1069,8 @@ namespace Microting.eFormInventoryBase.Migrations
                     b.HasOne("Microting.eFormInventoryBase.Infrastructure.Data.Entities.ItemType", "ItemType")
                         .WithMany()
                         .HasForeignKey("ItemTypeId");
+
+                    b.Navigation("ItemType");
                 });
 
             modelBuilder.Entity("Microting.eFormInventoryBase.Infrastructure.Data.Entities.ItemGroup", b =>
@@ -1068,6 +1078,8 @@ namespace Microting.eFormInventoryBase.Migrations
                     b.HasOne("Microting.eFormInventoryBase.Infrastructure.Data.Entities.ItemGroup", "Parent")
                         .WithMany()
                         .HasForeignKey("ParentId");
+
+                    b.Navigation("Parent");
                 });
 
             modelBuilder.Entity("Microting.eFormInventoryBase.Infrastructure.Data.Entities.ItemGroupDependency", b =>
@@ -1083,6 +1095,10 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasForeignKey("ItemTypeId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
+
+                    b.Navigation("ItemGroup");
+
+                    b.Navigation("ItemType");
                 });
 
             modelBuilder.Entity("Microting.eFormInventoryBase.Infrastructure.Data.Entities.ItemType", b =>
@@ -1090,6 +1106,8 @@ namespace Microting.eFormInventoryBase.Migrations
                     b.HasOne("Microting.eFormInventoryBase.Infrastructure.Data.Entities.ItemGroup", "ItemGroup")
                         .WithMany()
                         .HasForeignKey("ItemGroupId");
+
+                    b.Navigation("ItemGroup");
                 });
 
             modelBuilder.Entity("Microting.eFormInventoryBase.Infrastructure.Data.Entities.ItemTypeDependency", b =>
@@ -1105,6 +1123,10 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasForeignKey("ParentItemTypeId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
+
+                    b.Navigation("DependItemType");
+
+                    b.Navigation("ParentItemType");
                 });
 
             modelBuilder.Entity("Microting.eFormInventoryBase.Infrastructure.Data.Entities.ItemTypeTag", b =>
@@ -1120,6 +1142,10 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasForeignKey("ItemTypeId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
+
+                    b.Navigation("InventoryTag");
+
+                    b.Navigation("ItemType");
                 });
 
             modelBuilder.Entity("Microting.eFormInventoryBase.Infrastructure.Data.Entities.UploadedDataType", b =>
@@ -1129,6 +1155,31 @@ namespace Microting.eFormInventoryBase.Migrations
                         .HasForeignKey("ItemTypeId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
+
+                    b.Navigation("ItemType");
+                });
+
+            modelBuilder.Entity("Microting.eFormInventoryBase.Infrastructure.Data.Entities.InventoryTag", b =>
+                {
+                    b.Navigation("ItemTypeTags");
+                });
+
+            modelBuilder.Entity("Microting.eFormInventoryBase.Infrastructure.Data.Entities.ItemGroup", b =>
+                {
+                    b.Navigation("ItemGroupDependencies");
+                });
+
+            modelBuilder.Entity("Microting.eFormInventoryBase.Infrastructure.Data.Entities.ItemType", b =>
+                {
+                    b.Navigation("DependItemTypes");
+
+                    b.Navigation("ItemGroupDependencies");
+
+                    b.Navigation("ItemTypeTags");
+
+                    b.Navigation("ItemTypeUploadedDatas");
+
+                    b.Navigation("ParentItemTypes");
                 });
 #pragma warning restore 612, 618
         }
