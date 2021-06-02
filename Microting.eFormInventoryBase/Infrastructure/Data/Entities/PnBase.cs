@@ -95,7 +95,7 @@ namespace Microting.eFormInventoryBase.Infrastructure.Data.Entities
             var curreList = obj.GetType().GetProperties();
             foreach (var prop in curreList)
             {
-                if (prop.PropertyType.FullName != null && !prop.PropertyType.FullName.Contains("Microting.ItemsPlanningBase.Infrastructure.Data.Entities"))
+                if (prop.PropertyType.FullName != null && !prop.PropertyType.FullName.Contains("Microting.eFormInventoryBase.Infrastructure.Data.Entities"))
                 {
                     try
                     {
